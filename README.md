@@ -6,9 +6,11 @@ Auto play [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/) with effic
 ## Installation Guide
 
 1. First Install Python and add its path to environment variable
-2. From command line `pip install selenium`
-3. Download [Chrome Driver](https://chromedriver.chromium.org/downloads) and place it in the ` C:\Development\ ` directory
-4. Execute this Code :)
+2. In command lind check if its path found by typing `python -V` or `python3 -V`
+3. From command line `pip install selenium` or `pip3 install selenium` for python 3
+4. Download [Chrome Driver](https://chromedriver.chromium.org/downloads) and place it in the ` C:\Development\ ` directory
+5. Execute main.py :)
+6. After a few seconds It shoud start automatically.
 
 ## Features Added
 
