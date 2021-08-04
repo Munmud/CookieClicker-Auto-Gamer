@@ -14,11 +14,11 @@ time.sleep(5)
 def upgrade_Click():
     """Click upgraded element if available"""
     try:
-        r = driver.find_elements_by_css_selector(
+        available_upgrades = driver.find_elements_by_css_selector(
             '#upgrades .crate.upgrade.enabled')
-        for x in r:
+        for upgrade_button in available_upgrades:
             try:
-                x.click()
+                upgrade_button.click()
                 break
             except:
                 print("No application button, upgrade_Click skipped.")
@@ -29,20 +29,23 @@ def upgrade_Click():
 def buy_cookie_generator():
     """Buy cookie generator if building cnt <20"""
     try:
-        r = driver.find_elements_by_css_selector(
+        available_buildings = driver.find_elements_by_css_selector(
             '#products .product.unlocked.enabled')
-        r.reverse()
-        for x in r:
-            cnt = x.find_element_by_xpath(
+        available_buildings.reverse()
+        for buy_button in available_buildings:
+
+            price = None
+            price_text = buy_button.find_element_by_xpath(
                 ".//*[contains(@class, 'owned')]").text
-            cnt = str(cnt)
-            if (cnt == ''):
-                cnt = 0
-            cnt = int(cnt)
-            if(cnt == 20):
+            price_string = str(price_text)
+            if (price_string == ''):
+                price = 0
+            price = int(price)
+            if(price == 20):
                 continue
+
             try:
-                x.click()
+                buy_button.click()
                 break
             except:
                 print("No application button, cookie_generator skipped.")
@@ -51,10 +54,10 @@ def buy_cookie_generator():
 
 
 def notification_close():
-    r = driver.find_elements_by_css_selector('#notes .close')
-    for x in r:
+    notifications = driver.find_elements_by_css_selector('#notes .close')
+    for close_button in notifications:
         try:
-            x.click()
+            close_button.click()
             break
         except:
             print("Cannot close notification, skipped")
