@@ -1,8 +1,9 @@
 # CookieClicker-Auto-Gamer
 Auto play [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/) with efficient Algorithm
 <br>
+
+
 ## Installation Guide
----
 
 1. First Install Python and add its path to environment variable
 2. From command line `pip install selenium`
@@ -10,7 +11,6 @@ Auto play [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/) with effic
 4. Execute this Code :)
 
 ## Features Added
----
 
 1. Auto Click Cookie
 2. Auto Upgrade From store
