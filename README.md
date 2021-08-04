@@ -15,4 +15,5 @@ Auto play [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/) with effic
 1. Auto Click Cookie
 2. Auto Upgrade From store
 3. Auto Buy Building
-4. We own max 20 building of each type
+4. Auto Close Notification
+5. We own max 20 building of each type
